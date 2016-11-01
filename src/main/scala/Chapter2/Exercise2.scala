@@ -14,12 +14,7 @@ object Exercise2 extends App {
 
   // IO side effect as last call
   val arr: Array[Int] = Array[Int](1, 2, 3, 5, 4, 6, 7, 8, 9)
-  print(arr.mkString(","))
-  println(" is sorted : " +
-    isSorted[Int](
-      arr,
-      (a: Int, b: Int) => a < b
-    )
-  )
+  val fun: (Int, Int) => Boolean = (a: Int, b: Int) => a < b
+  println(arr.mkString(",") + " is sorted : " + isSorted(arr, fun))
 
 }
