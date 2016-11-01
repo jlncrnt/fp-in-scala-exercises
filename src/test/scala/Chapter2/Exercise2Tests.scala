@@ -25,7 +25,7 @@ class Exercise2Tests extends FlatSpec with Matchers {
     assert(Exercise2 isSorted(arr, fun))
   }
 
-  "An array of arbitrary objects" should "return true with function <" in {
+  "An array of arbitrary objects" should "return true with function defined <" in {
     case class Arbitrary(n: Int) { def <(that: Arbitrary) = this.n < that.n }
     def fun: (Arbitrary, Arbitrary) => Boolean = (a: Arbitrary, b:Arbitrary) => a < b
     val (smaller, bigger) = (Arbitrary(0), Arbitrary(1))
