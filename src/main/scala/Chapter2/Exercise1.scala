@@ -10,7 +10,7 @@ object Exercise1 extends App {
 
   def fibonacci(n: Int): Int = from(0)(1) take n last
 
-  // IO side effect as last call
+  // IO side effect as last call to prettify run
   println("9th fibonacci number is : " + fibonacci(9))
 
 }

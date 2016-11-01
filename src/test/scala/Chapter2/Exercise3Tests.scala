@@ -7,7 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
   */
 class Exercise3Tests extends FlatSpec with Matchers {
 
-  "Ex. 3 curry function" should "be able to curry (Char, Int) => String function" in {
+  "Ex. 3 curry function" should "be able to curry a (Char, Int) => String function" in {
     def madras: (List[Char], Int) => String = (a: List[Char], b: Int) => a.mkString + b.toString
     def recipe = Exercise3 curry madras
     def meal = recipe("Vindaloo".toList)
