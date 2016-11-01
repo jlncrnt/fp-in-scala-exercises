@@ -14,6 +14,6 @@ object Exercise3 extends App {
   def recipe = Exercise3 curry madras
   def meal = recipe("Vindaloo".toList)
   val mealNumber = meal(8)
-  println("Result of a curry function parametrized with Vandaloo and called with 8 : " + mealNumber)
+  println("Result of a curry function parametrized with Vindaloo and called with 8 : " + mealNumber)
 
 }
