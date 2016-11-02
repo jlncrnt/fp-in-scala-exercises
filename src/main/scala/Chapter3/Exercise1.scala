@@ -1,10 +1,5 @@
 package Chapter3
 
-/**
-  * Julien 11.02.2016
-  * "List" refers to impl. in this package
-  */
-
 object Exercise1 extends App {
 
   import List._
