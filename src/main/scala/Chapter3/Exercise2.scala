@@ -9,25 +9,17 @@ object Exercise2 extends App {
 
   /**
     * Implement function tail such as it takes constant time.
-    * Make all in a class so we can extend it in further exercises.
-    * Explicitly indicate package in extend to avoid confusion.
+    * "List" refers to the implementation in this package.
     */
 
-  trait Get[+A] extends Chapter3.List[A]
-
-  object Get {
-
-    def tail[T](as: List[T]): List[T] = as match {
-      case Nil => throw new Error("Tail of empty list")
-      case Cons(x, xs) => xs
-    }
-
+  def tail[T](as: List[T]): List[T] = as match {
+    case Nil => throw new Error("Tail of empty list")
+    case Cons(x, xs) => xs
   }
 
-  val list = List(1,2,3,4,5,6,7,8,9,10)
+  val list = List(1,2,3)
 
   println("List : " + list)
 
-  println("Tail : " + Get.tail(list))
-
+  println("Tail : " + tail(list))
 }
