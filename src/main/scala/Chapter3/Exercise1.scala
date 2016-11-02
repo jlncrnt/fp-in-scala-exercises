@@ -18,7 +18,7 @@ object Exercise1 extends App {
     */
 
   val x = List(1,2,3,4,5) match {
-    case Cons(y, Cons(2, Cons(4, _))) => x
+    case Cons(y, Cons(2, Cons(4, _))) => y
     case Nil => 42
     case Cons(y, Cons(z, Cons(3, Cons(4, _)))) => y + z
     case Cons(h, t) => h + sum(t)
