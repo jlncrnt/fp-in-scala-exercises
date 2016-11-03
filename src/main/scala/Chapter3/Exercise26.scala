@@ -3,7 +3,7 @@ package Chapter3
 object Exercise26 extends App {
 
   /**
-    * Write a function that counts the number of nodes in a tree
+    * Write a function that returns the biggest value in a tree
     */
 
   def maximum(tree: Tree[Int]): Int = tree match {
