@@ -12,6 +12,6 @@ object Exercise17 extends App {
 
   val list = List(1.0,2.0,3.0,4.0,5.0)
 
-  println("Append List(6,7,8) to right of List(1,2,3,4,5) gives : " + toStringList(list))
+  println("Convert a list of double to a list of string : " + toStringList(list))
 
 }
