@@ -6,7 +6,6 @@ object Exercise20 extends App {
     * Implement function filter
     */
 
-  import Exercise8.foldRight
   import Exercise18.map
   import Exercise15.concatenate
 
