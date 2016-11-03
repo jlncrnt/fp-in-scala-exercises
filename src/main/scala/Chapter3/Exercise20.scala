@@ -3,7 +3,7 @@ package Chapter3
 object Exercise20 extends App {
 
   /**
-    * Implement function filter
+    * Implement function flatMap
     */
 
   import Exercise18.map
