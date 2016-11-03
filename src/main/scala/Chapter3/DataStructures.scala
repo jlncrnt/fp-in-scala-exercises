@@ -9,6 +9,7 @@ package Chapter3
 trait List[+A]
 
 case object Nil extends List[Nothing]
+
 case class Cons[+A](head: A, tail: List[A]) extends List[A]
 
 object List {
@@ -18,7 +19,7 @@ object List {
     case Cons(x, xs) => x + sum(xs)
   }
 
-  def product(ds: List[Double]): Double =  ds match {
+  def product(ds: List[Double]): Double = ds match {
     case Nil => 1.0
     case Cons(0.0, _) => 0.0
     case Cons(x, xs) => x * product(xs)
@@ -32,6 +33,15 @@ object List {
 }
 
 trait Tree[+A]
+
+object Tree {
+  def print[A](t: Tree[A]): String = t match {
+    case Branch(l, r) => "(" + print(l) + ":" + print(r) + ")"
+    case Leaf(v) => v.toString
+  }
+}
+
 case class Leaf[A](value: A) extends Tree[A]
+
 case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A]
 
