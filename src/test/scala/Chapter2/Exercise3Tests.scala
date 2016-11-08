@@ -13,7 +13,7 @@ class Exercise3Tests extends FlatSpec with Matchers {
 
   }
 
-  "Curried function" should "return correct result when called" in {
+  "Ex. 3 curry function" should "be able to curry a (Char, Int) => String function" in {
     def madras: (List[Char], Int) => String = (a: List[Char], b: Int) => a.mkString + b.toString
     def recipe = Exercise3 curry madras
     def meal = recipe("Vindaloo".toList)

@@ -1,7 +1,11 @@
 package Chapter2
 
 /**
+<<<<<<< HEAD
   * Write the implementation of uncurry function
+=======
+  * Write the implementation of an uncurry function
+>>>>>>> 9ebb8dca7919bcca835d45c896f9054bd1f70c47
   */
 object Exercise4 extends App {
 
