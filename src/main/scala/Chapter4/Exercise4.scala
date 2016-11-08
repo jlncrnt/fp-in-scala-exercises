@@ -5,7 +5,8 @@ package Chapter4
   */
 object Exercise4 extends App {
 
-  import Exercise1._
+  import scala.{Option => _, Either => _, _}
+  import Chapter4.Exercise1.{Some,Option}
 
   trait OptionWithSequence[+A] extends Option[A] {
 

@@ -8,7 +8,7 @@ package Chapter4
   */
 object Exercise6 extends App {
 
-  import Chapter4.Exercise1._
+  import scala.{Option => _, Either => _, _}
 
   trait Either[+E, +A] {
     def map[B](f: A => B): Either[E, B] = this match {
@@ -33,7 +33,7 @@ object Exercise6 extends App {
     def map2[EE >: E, B, C](b: Either[EE, B])(f: (A, B) => C): Either[EE, C] =
       for {a <- this; b1 <- b} yield f(a, b1)
 
-    def Try[A](a: => A): Either[Exception, A] = try Right(a) catch {
+    def Try[B](a: => B): Either[Exception, B] = try Right(a) catch {
       case e: Exception => Left(e)
     }
   }

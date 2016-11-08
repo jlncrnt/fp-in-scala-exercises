@@ -6,6 +6,9 @@ package Chapter4
   * in the Option trait
   */
 object Exercise1 extends App {
+
+  import scala.{Option => _, Either => _, _}
+
   trait Option[+A] {
     def map[B](f: A => B): Option[B] = this match {
       case Some(a) => Some(f(a))

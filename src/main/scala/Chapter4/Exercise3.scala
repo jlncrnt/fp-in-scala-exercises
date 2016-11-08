@@ -5,7 +5,8 @@ package Chapter4
   */
 object Exercise3 extends App {
 
-  import Exercise1._
+  import scala.{Option => _, Either => _, _}
+  import Chapter4.Exercise1.{None,Some,Option}
 
   trait OptionWithMap2[+A] extends Option[A] {
 

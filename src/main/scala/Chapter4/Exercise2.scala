@@ -5,7 +5,8 @@ package Chapter4
   */
 object Exercise2 extends App {
 
-  import Exercise1._
+  import scala.{Option => _, Either => _, _}
+  import Chapter4.Exercise1.{None, Some}
 
   trait OptionWithVariance[+A] extends Option[A] {
     def mean(s: Seq[Double]): Option[Double] = if(s.isEmpty) None else Some(s.sum / s.size)
