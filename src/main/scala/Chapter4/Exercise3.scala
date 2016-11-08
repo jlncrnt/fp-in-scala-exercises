@@ -25,4 +25,14 @@ object Exercise3 extends App {
 
   }
 
+  object o extends OptionWithMap2[Any]
+
+  val myt = o.map2(Some(1),Some(2.0))(_+_)
+  val t = o.map2(Some(1),Some(2.0))(_+_)
+  val myResult = myt.getOrElse(throw new Error("Cannot call f on args"))
+  val result = t.getOrElse(throw new Error("Cannot call f on args"))
+
+  println("My result : " + myResult)
+  println("Correct answer : " + result)
+
 }
