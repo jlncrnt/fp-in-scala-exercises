@@ -12,6 +12,7 @@ object Exercise7 extends App {
 
   trait EitherWithSequenceAndTravers[+E,+A] extends Either[E,A] {
 
+    // Is implemented like so in official answer
     def sequence[EE >: E,B](es: List[Either[EE,B]]): Either[EE,List[B]] = traverse(es)(identity)
 
     def traverse[EE >: E,B,C](es: List[B])(f: B => Either[EE,C]): Either[EE, List[C]] = es match {
