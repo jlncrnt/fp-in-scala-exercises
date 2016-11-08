@@ -2,6 +2,8 @@ package Chapter4
 
 /**
   * Created by julien on 08.11.16.
+  * Implement map, flatMap, getOrElse, orElse and filter
+  * in the Option trait
   */
 object Exercise1 extends App {
   trait Option[+A] {
