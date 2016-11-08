@@ -13,7 +13,7 @@ object Exercise5 extends App {
   trait OptionWithTraverse[+A] extends OptionWithMap2[A] {
 
     // Correct Answer
-    def traverse[A, B](l: List[A])(f: A => Option[B]): Option[List[B]] = l match {
+    def traverse[B, C](l: List[B])(f: B => Option[C]): Option[List[C]] = l match {
       case Nil => Some(Nil)
       case h :: t => o.map2(f(h), traverse(t)(f))(_ :: _)
     }
