@@ -27,7 +27,6 @@ object Exercise1 extends App {
       case Some(a) if f(a) => this
       case _ => None
     }
-1
   }
   case class Some[+A](get: A) extends Option[A]
   case object None extends Option[Nothing]
