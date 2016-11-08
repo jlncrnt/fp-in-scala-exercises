@@ -8,7 +8,7 @@ package Chapter4
 object Exercise7 extends App {
 
   import scala.{Option => _, Either => _, _}
-  import Chapter4.Exercise6.{Right,Left,Either}
+  import Chapter4.Exercise6.{Right,Either}
 
   trait EitherWithSequenceAndTravers[+E,+A] extends Either[E,A] {
 
