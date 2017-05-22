@@ -1,12 +1,9 @@
 package Chapter5
 
-
 /**
   * Created by julien on 08.11.16.
   */
-object Exercise1 extends App {
-
-  import scala.annotation.tailrec
+object Exercise3 extends App {
   // Stream implementation
 
   trait Stream[+A] {
@@ -19,6 +16,18 @@ object Exercise1 extends App {
     def toList: List[A] = this match {
       case Empty => Nil
       case Cons(h, t) => h() :: t().toList
+    }
+
+    def take(n: Int): List[A] = this match {
+      case Empty => Nil
+      case Cons(h,t) if n  > 1 => h() :: t().take(n - 1)
+      case Cons(h,t) if n == 1 => h() :: Nil
+    }
+
+    def takeWhile(p: A => Boolean): List[A] = this match {
+      case Empty => Nil
+      case Cons(h, t) if  p(h()) => h() :: t().takeWhile(p)
+      case Cons(h, t) if !p(h()) => Nil
     }
 
   }
@@ -42,7 +51,6 @@ object Exercise1 extends App {
 
   }
 
-
-  Stream().headOption
-
+  Stream(1,2,3).takeWhile(_ < 3)
+  
 }

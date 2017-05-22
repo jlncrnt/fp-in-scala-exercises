@@ -1,6 +1,6 @@
 package Chapter2
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest._
 
 /**
   * Created by julien on 01.11.16.
