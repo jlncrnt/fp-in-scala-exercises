@@ -1,7 +1,7 @@
 package Chapter4
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   * Implement map, flatMap, getOrElse, orElse and filter
   * in the Option trait
   */

@@ -16,7 +16,7 @@ object Exercise24 extends App {
   def hasSubsequence[T](sup: List[T], sub: List[T]): Boolean = (sup,sub) match {
     case (Cons(x,xs),Cons(y,ys)) if x == y =>
       if (isRestComplete(xs,ys)) true else hasSubsequence(xs,Cons(y,ys))
-    case (Cons(x,xs),Cons(y,ys)) => hasSubsequence(xs,Cons(y,ys))
+    case (Cons(_,xs),Cons(y,ys)) => hasSubsequence(xs,Cons(y,ys))
     case _ => false
   }
 

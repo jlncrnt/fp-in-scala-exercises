@@ -1,7 +1,7 @@
 package Chapter5
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   */
 object Exercise02 extends App {
   import scala.annotation.tailrec
@@ -23,7 +23,7 @@ object Exercise02 extends App {
 
     def take(n: Int): Stream[A] = this match {
       case Cons(h,t) if n >  1 => cons(h(), t().take(n-1))
-      case Cons(h,t) if n == 1 => cons(h(), empty)
+      case Cons(h,_) if n == 1 => cons(h(), empty)
       case _ => empty
     }
 

@@ -1,9 +1,9 @@
 package Chapter4
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   * Implement version of map, flatMap, orElse and map2 for Either
-  * that opertate on the Right value
+  * that operate on the Right value
   */
 object Exercise08 extends App {
 

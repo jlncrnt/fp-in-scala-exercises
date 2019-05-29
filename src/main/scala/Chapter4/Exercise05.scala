@@ -1,7 +1,7 @@
 package Chapter4
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   * Implement function traverse
   */
 object Exercise05 extends App {

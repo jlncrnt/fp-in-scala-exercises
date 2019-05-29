@@ -9,7 +9,7 @@ object Exercise03 extends App {
 
   def setHead[T](h: T, as: List[T]): List[T] = as match {
     case Nil => List(h)
-    case Cons(x, xs) => Cons(h, xs)
+    case Cons(_, xs) => Cons(h, xs)
   }
 
   val list = List[Int](1,2,3)

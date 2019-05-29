@@ -8,7 +8,7 @@ object Exercise27 extends App {
 
   def depth[A](tree: Tree[A], n: Int): Int = tree match {
     case Branch(l,r) => depth(l,n+1) max depth(r,n+1)
-    case Leaf(v) => n
+    case Leaf(_) => n
   }
 
   val tree = Branch(Leaf(1),Branch(Leaf(2),Leaf(3)))

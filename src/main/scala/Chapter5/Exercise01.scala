@@ -2,7 +2,7 @@ package Chapter5
 
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   */
 object Exercise01 extends App {
 

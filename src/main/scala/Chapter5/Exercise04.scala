@@ -1,7 +1,7 @@
 package Chapter5
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   */
 object Exercise04 extends App {
   // Stream implementation
@@ -21,13 +21,13 @@ object Exercise04 extends App {
     def take(n: Int): List[A] = this match {
       case Empty => Nil
       case Cons(h,t) if n  > 1 => h() :: t().take(n - 1)
-      case Cons(h,t) if n == 1 => h() :: Nil
+      case Cons(h,_) if n == 1 => h() :: Nil
     }
 
     def takeWhile(p: A => Boolean): List[A] = this match {
       case Empty => Nil
       case Cons(h, t) if  p(h()) => h() :: t().takeWhile(p)
-      case Cons(h, t) if !p(h()) => Nil
+      case Cons(h, _) if !p(h()) => Nil
     }
 
   }

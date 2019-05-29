@@ -1,7 +1,7 @@
 package Chapter4
 
 /**
-  * Created by julien on 08.11.16.
+  * Created by Julien on 08.11.16.
   */
 object Exercise03 extends App {
 

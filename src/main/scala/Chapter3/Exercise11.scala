@@ -16,6 +16,6 @@ object Exercise11 extends App {
 
   println("sum of List(1,2,3,4,5) is : " + sum(list))
   println("product of List(1,2,3,4,5) is : " + product(list))
-  println("lenght of List(1,2,3,4,5) is : " + length(list))
+  println("length of List(1,2,3,4,5) is : " + length(list))
 
 }

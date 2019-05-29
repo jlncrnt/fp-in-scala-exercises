@@ -9,7 +9,7 @@ object Exercise02 extends App {
 
   def tail[T](as: List[T]): List[T] = as match {
     case Nil => throw new Error("Tail of empty list")
-    case Cons(x, xs) => xs
+    case Cons(_, xs) => xs
   }
 
   val list = List(1,2,3)

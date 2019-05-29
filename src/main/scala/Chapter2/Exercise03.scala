@@ -6,7 +6,7 @@ package Chapter2
 object Exercise03 extends App {
 
   def curry[A, B, C](f: (A, B) => C): A => B => C = {
-    (a: A) => (b: B) => f(a: A, b: B) // f(A,B) returns C and => is right associative
+    a: A => (b: B) => f(a: A, b: B) // f(A,B) returns C and => is right associative
   }
 
   // IO side effect as last call to prettify run

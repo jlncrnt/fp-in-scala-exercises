@@ -9,7 +9,7 @@ object Exercise06 extends App {
 
   def init[T](as: List[T]): List[T] = as match {
     case Nil => Nil
-    case Cons(x,Nil) => Nil
+    case Cons(_,Nil) => Nil
     case Cons(x,xs) => Cons(x, init(xs))
   }
 

@@ -10,7 +10,7 @@ object Exercise04 extends App {
   def drop[T](as: List[T], n: Int): List[T] = as match {
     case Nil => Nil
     case ls if n == 0 => ls
-    case Cons(x,xs) => drop(xs, n-1)
+    case Cons(_,xs) => drop(xs, n-1)
   }
 
   val list = List[Int](1,2,3,4,5,6)
