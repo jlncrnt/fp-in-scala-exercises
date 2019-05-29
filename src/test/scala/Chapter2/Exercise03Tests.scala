@@ -5,7 +5,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by julien on 01.11.16.
   */
-class Exercise3Tests extends FlatSpec with Matchers {
+class Exercise03Tests extends FlatSpec with Matchers {
 
   "Curry function" should "be able to curry (Char, Int) => String function" in {
     def madras: (List[Char], Int) => String = (a: List[Char], b: Int) => a.mkString + b.toString

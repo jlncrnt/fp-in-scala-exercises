@@ -5,7 +5,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by julien on 01.11.16.
   */
-class Exercise2Tests extends FlatSpec with Matchers {
+class Exercise02Tests extends FlatSpec with Matchers {
 
   "A sorted Array of int" should "return true with function <" in {
     val arr: Array[Int] = Array[Int](1,2,3,4,5,6,7,8,9)

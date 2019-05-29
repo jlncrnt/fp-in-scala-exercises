@@ -5,7 +5,7 @@ import org.scalatest._
 /**
   * Created by julien on 01.11.16.
   */
-class Exercise1Tests extends FlatSpec with Matchers {
+class Exercise01Tests extends FlatSpec with Matchers {
 
   "1th Fibonacci number of Exercise 2.1" should "be 0" in {
     Exercise01 fibonacci 1 shouldBe 0

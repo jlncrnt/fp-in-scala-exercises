@@ -5,7 +5,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by julien on 01.11.16.
   */
-class Exercise4Tests extends FlatSpec with Matchers {
+class Exercise04Tests extends FlatSpec with Matchers {
 
   "An uncurry function" should "be able to curry an (A => B => C) function without error" in {
     def f(i: Int): Char => String = (c: Char) => List.fill(i)(c).mkString
