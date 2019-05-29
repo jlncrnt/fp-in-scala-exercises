@@ -6,7 +6,7 @@ object Exercise17 extends App {
     * A function convert a list of double in a list of string
     */
 
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def toStringList(l: List[Double]): List[String] = foldRight(l,Nil:List[String])((a,b) => Cons[String](a.toString,b))
 

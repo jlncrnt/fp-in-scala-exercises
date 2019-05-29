@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise2 extends App {
+object Exercise02 extends App {
 
   /**
     * Implement function tail such as it takes constant time.

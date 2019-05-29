@@ -6,7 +6,7 @@ object Exercise16 extends App {
     * A function that adds 1 to every element of a list
     */
 
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def addOne(l: List[Int]): List[Int] = foldRight(l,Nil:List[Int])((a,b) => Cons(a+1,b))
 

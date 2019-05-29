@@ -1,12 +1,13 @@
 package Chapter5
 
+
 /**
   * Created by julien on 08.11.16.
   */
-object Exercise3 extends App {
-  // Stream implementation
+object Exercise01 extends App {
 
-  import Stream._
+  import scala.annotation.tailrec
+  // Stream implementation
 
   trait Stream[+A] {
 
@@ -20,26 +21,9 @@ object Exercise3 extends App {
       case Cons(h, t) => h() :: t().toList
     }
 
-    def take(n: Int): Stream[A] = this match {
-      case Cons(h,t) if n >  1 => cons(h(), t().take(n-1))
-      case Cons(h,t) if n == 1 => cons(h(), empty)
-      case _ => empty
-    }
-
-    def drop(n: Int): Stream[A] = this match {
-      case Cons(_,t) if n > 0 => t().drop(n-1)
-      case _ => this
-    }
-
-    def takeWhile(p: A => Boolean): Stream[A] = this match {
-      case Cons(h,t) if p(h()) => cons(h(), t().takeWhile(p))
-      case _ => this
-    }
-
   }
 
   case object Empty extends Stream[Nothing]
-
   case class Cons[+A](h: () => A, t: () => Stream[A]) extends Stream[A]
 
   object Stream {
@@ -58,6 +42,7 @@ object Exercise3 extends App {
 
   }
 
-  Stream(1,2,3).takeWhile(_ < 3).toList
-  
+
+  Stream().headOption
+
 }

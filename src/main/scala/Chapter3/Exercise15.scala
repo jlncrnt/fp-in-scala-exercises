@@ -6,8 +6,8 @@ object Exercise15 extends App {
     * Concatenate a list of two lists
     */
 
-  import Exercise8.foldRight
-  import Exercise2.tail
+  import Exercise08.foldRight
+  import Exercise02.tail
   import Exercise14.append
 
   def concatenate[T](ll: List[List[T]]): List[T] = ll match {

@@ -4,7 +4,7 @@ package Chapter2
   * Fibonacci number.
   */
 
-object Exercise1 extends App {
+object Exercise01 extends App {
 
   def from[T](n: T)(m: T)(implicit numeric: Numeric[T]): Stream[T] = n #:: from(m)(numeric.plus(n, m))
 

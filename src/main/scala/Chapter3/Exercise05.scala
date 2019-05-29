@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise5 extends App {
+object Exercise05 extends App {
 
   /**
     * Implement function dropWhile

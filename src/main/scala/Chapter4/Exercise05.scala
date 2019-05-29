@@ -4,11 +4,11 @@ package Chapter4
   * Created by julien on 08.11.16.
   * Implement function traverse
   */
-object Exercise5 extends App {
+object Exercise05 extends App {
 
   import scala.{Option => _, Either => _, _}
-  import Chapter4.Exercise1.{Some, Option}
-  import Chapter4.Exercise3.OptionWithMap2
+  import Chapter4.Exercise01.{Some, Option}
+  import Chapter4.Exercise03.OptionWithMap2
 
   trait OptionWithTraverse[+A] extends OptionWithMap2[A] {
 

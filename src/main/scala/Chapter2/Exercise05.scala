@@ -3,7 +3,7 @@ package Chapter2
 /**
   * Implement the compose function
   */
-object Exercise5 extends App {
+object Exercise05 extends App {
 
   def compose[A, B, C](f: B => C, g: A => B): A => C = {
     (a: A) => f(g(a))

@@ -1,12 +1,12 @@
 package Chapter3
 
-object Exercise9 extends App {
+object Exercise09 extends App {
 
   /**
     * Compute the length of a list using foldRight
     */
 
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def length[A](as: List[A]): Int = foldRight(as, 0)((_,x) => x + 1)
 

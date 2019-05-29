@@ -6,7 +6,7 @@ object Exercise19 extends App {
     * Implement function filter
     */
 
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def filter[T](l: List[T])(f: T => Boolean): List[T] = foldRight(l,Nil:List[T])((h,t) => if(f(h)) Cons[T](h,t) else t)
 

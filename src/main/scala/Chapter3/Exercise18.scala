@@ -6,7 +6,7 @@ object Exercise18 extends App {
     * Implement function Map
     */
 
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def map[A,B](l: List[A])(f: A => B): List[B] = foldRight(l,Nil:List[B])((a,b) => Cons[B](f(a),b))
 

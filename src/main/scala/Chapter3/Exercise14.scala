@@ -7,7 +7,7 @@ object Exercise14 extends App {
     */
 
   import Exercise10.foldLeft
-  import Exercise8.foldRight
+  import Exercise08.foldRight
 
   def append[T](l: List[T], e: List[T]): List[T] = foldRight(l, e)(Cons(_,_))
 

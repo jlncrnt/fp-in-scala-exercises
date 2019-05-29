@@ -3,7 +3,7 @@ package Chapter4
 /**
   * Implement variance in terms of flatmap
   */
-object Exercise2 extends App {
+object Exercise02 extends App {
 /*
   import scala.{Option => _, Either => _, _}
   import Chapter4.Exercise1.{None, Some}

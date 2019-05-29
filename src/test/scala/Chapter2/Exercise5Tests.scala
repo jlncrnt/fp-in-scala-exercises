@@ -10,7 +10,7 @@ class Exercise5Tests extends FlatSpec with Matchers {
   "2.0" should "be converted to \"2.0\" with Double => Int and Int => String function composition" in {
     def f(i: Int): String = i.toString
     def g(d: Double): Int = d.toInt
-    def comp: Double => String = Exercise5.compose[Double, Int, String](f,g)
+    def comp: Double => String = Exercise05.compose[Double, Int, String](f,g)
     comp(2.0) shouldBe "2"
   }
 }

@@ -6,7 +6,7 @@ package Chapter4
   * Implement version of map, flatMap, orElse and map2 for Either
   * that opertate on the Right value
   */
-object Exercise6 extends App {
+object Exercise06 extends App {
 
   import scala.{Option => _, Either => _, _}
 

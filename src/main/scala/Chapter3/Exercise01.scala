@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise1 extends App {
+object Exercise01 extends App {
 
   import List._
 

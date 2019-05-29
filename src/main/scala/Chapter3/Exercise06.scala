@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise6 extends App {
+object Exercise06 extends App {
 
   /**
     * Implement function init

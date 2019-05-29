@@ -3,10 +3,10 @@ package Chapter4
 /**
   * Created by julien on 08.11.16.
   */
-object Exercise3 extends App {
+object Exercise03 extends App {
 
   import scala.{Option => _, Either => _, _}
-  import Chapter4.Exercise1.{None,Some,Option}
+  import Chapter4.Exercise01.{None,Some,Option}
 
   trait OptionWithMap2[+A] extends Option[A] {
 

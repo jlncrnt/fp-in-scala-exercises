@@ -5,7 +5,7 @@ package Chapter2
   * Array is sorted according to a given
   * comparison function
   */
-object Exercise2 extends App {
+object Exercise02 extends App {
 
   def isSorted[T](as: Array[T], ordered: (T, T) => Boolean): Boolean = as match {
     case Array(a, b) => ordered(a, b)

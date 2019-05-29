@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise3 extends App {
+object Exercise03 extends App {
 
   /**
     * Implement function setHead

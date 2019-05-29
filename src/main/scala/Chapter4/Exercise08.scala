@@ -5,7 +5,7 @@ package Chapter4
   * Implement version of map, flatMap, orElse and map2 for Either
   * that opertate on the Right value
   */
-object Exercise8 extends App {
+object Exercise08 extends App {
 
   println(
     """

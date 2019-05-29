@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise7 extends App {
+object Exercise07 extends App {
 
   println()
   println(""" | In the implementation of product given in the book,

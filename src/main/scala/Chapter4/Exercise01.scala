@@ -5,7 +5,7 @@ package Chapter4
   * Implement map, flatMap, getOrElse, orElse and filter
   * in the Option trait
   */
-object Exercise1 extends App {
+object Exercise01 extends App {
 
   import scala.{Option => _, Either => _, _}
 

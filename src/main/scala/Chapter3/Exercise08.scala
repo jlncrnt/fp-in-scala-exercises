@@ -1,6 +1,6 @@
 package Chapter3
 
-object Exercise8 extends App {
+object Exercise08 extends App {
 
   println()
   println(""" | It will build a list, calling Cons on each element

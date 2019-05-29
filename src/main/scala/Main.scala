@@ -1,4 +1,4 @@
-import Chapter2.{Exercise1, Exercise2}
+import Chapter2.{Exercise01, Exercise02}
 
 /**
   * Created by julien on 01.11.16.
