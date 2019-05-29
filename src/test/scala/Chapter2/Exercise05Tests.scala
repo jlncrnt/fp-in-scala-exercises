@@ -13,4 +13,5 @@ class Exercise05Tests extends FlatSpec with Matchers {
     def comp: Double => String = Exercise05.compose[Double, Int, String](f,g)
     comp(2.0) shouldBe "2"
   }
+
 }
