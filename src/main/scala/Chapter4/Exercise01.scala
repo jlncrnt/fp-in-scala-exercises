@@ -23,8 +23,8 @@ object Exercise01 extends App {
       case None => default
     }
     def orElse[B >: A](ob: => Option[B]): Option[B] = this match {
-      case _ => this
       case None => ob
+      case _ => this
     }
     def filter(f: A => Boolean): Option[A] = this match {
       case Some(a) if f(a) => this

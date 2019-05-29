@@ -8,13 +8,15 @@ object Exercise03 extends App {
   import scala.{Option => _, Either => _, _}
   import Chapter4.Exercise01.{None,Some,Option}
 
-  trait OptionWithMap2[+A] extends Option[A] {
+  trait OptionWithMap2[+T] extends Option[T] {
 
     // My implementation
     def myMap2[A, B, C](a: Option[A], b: Option[B])(f: (A, B) => C): Option[C] = (a, b) match {
       case (_, None) => None
       case (None, _) => None
-      case (Some(a), Some(b)) => Some(f(a, b))
+      case (Some(x), Some(y)) => Some(f(x, y))
+        /** Avoid warning on compilation */
+      case _ => throw new Exception("This should never happen")
     }
 
     // Answer

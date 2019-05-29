@@ -13,6 +13,8 @@ object Exercise23 extends App {
       Cons(x, xs),
       Cons(y, ys)
     ) => Cons(f(x, y), zipWith(xs, ys)(f))
+    /** Avoid warning on compilation */
+    case _ => throw new Exception("This should never happens")
   }
 
   val l = List(1,2,3)
