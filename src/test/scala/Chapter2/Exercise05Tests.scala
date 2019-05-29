@@ -3,7 +3,7 @@ package Chapter2
 import org.scalatest.{FlatSpec, Matchers}
 
 /**
-  * Created by julien on 01.11.16.
+  * Created by Julien on 01.11.16.
   */
 class Exercise05Tests extends FlatSpec with Matchers {
 

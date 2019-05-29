@@ -3,7 +3,7 @@ package Chapter2
 import org.scalatest.{FlatSpec, Matchers}
 
 /**
-  * Created by julien on 01.11.16.
+  * Created by Julien on 01.11.16.
   */
 class Exercise02Tests extends FlatSpec with Matchers {
 
@@ -26,7 +26,7 @@ class Exercise02Tests extends FlatSpec with Matchers {
   }
 
   "An array of arbitrary objects" should "return true with function defined <" in {
-    case class Arbitrary(n: Int) { def <(that: Arbitrary) = this.n < that.n }
+    case class Arbitrary(n: Int) { def <(that: Arbitrary): Boolean = this.n < that.n }
     def fun: (Arbitrary, Arbitrary) => Boolean = (a: Arbitrary, b:Arbitrary) => a < b
     val (smaller, bigger) = (Arbitrary(0), Arbitrary(1))
     val arr: Array[Arbitrary] = Array[Arbitrary](smaller, bigger)
