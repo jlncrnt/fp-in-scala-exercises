@@ -1,4 +1,4 @@
-# fp-in-scala-exercises
+# Functional Programming in Scala
 
 Repo to keep (and share) my solutions of the "Functional Programming In Scala" book exercises.
 
